@@ -11,7 +11,7 @@ set -vx
 wget -qO- uny.nu/pkg | bash -s buildsys
 
 ### Installing build dependencies
-unyp install libjpeg-turbo libtiff
+unyp install libjpeg-turbo libtiff libpng libxml2
 
 #pip3_bin=(/uny/pkg/python/*/bin/pip3)
 #"${pip3_bin[0]}" install --upgrade pip
@@ -188,7 +188,7 @@ JPEGLIB = libjpeg.so
 PNGHDR_DIR = USE_PKG_CONFIG.a
 PNGLIB = USE_PKG_CONFIG.a
 ZLIB = libz.so
-X11LIB = NONE
+X11LIB = libX11.so
 NETPBM_DOCURL = http://netpbm.sourceforge.net/doc/
 WANT_SSE = Y
 EOF
