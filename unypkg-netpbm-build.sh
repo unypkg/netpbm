@@ -83,7 +83,7 @@ get_include_paths
 
 unset LD_RUN_PATH
 
-tee config.mk <<EOF
+tee config.mk <<'EOF'
 DEFAULT_TARGET = nonmerge
 BUILD_FIASCO = Y
 CC = cc
