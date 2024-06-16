@@ -194,7 +194,7 @@ WANT_SSE = Y
 EOF
 
 make -j"$(nproc)"
-mkdir -p /uny/pkg/"$pkgname"/"$pkgver"
+mkdir -p /uny/pkg/"$pkgname"
 make package pkgdir=/uny/pkg/"$pkgname"/"$pkgver"
 
 ####################################################
