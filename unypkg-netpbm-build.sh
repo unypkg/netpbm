@@ -11,7 +11,7 @@ set -vx
 wget -qO- uny.nu/pkg | bash -s buildsys
 
 ### Installing build dependencies
-unyp install libjpeg-turbo libtiff libpng libxml2
+unyp install libjpeg-turbo libtiff libpng libxml2 xorg/latest/lib/libX11
 
 #pip3_bin=(/uny/pkg/python/*/bin/pip3)
 #"${pip3_bin[0]}" install --upgrade pip
